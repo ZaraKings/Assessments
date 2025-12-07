@@ -1,0 +1,455 @@
+/*=====css reset and base styles=====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+body {
+    background-color: var(--cream);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --cream: #f8e2c9;
+    --beige: #F5E9DE;
+    --light-taupe: #E8D7C9;
+    --dark-taupe: #D4B8A4;
+    --gold: #D4A574;
+    --sage: #A3B18A;
+    --chocolate: #583101;
+    --parmesan-gold: #FFD166;
+    --garlic-white: #F8F7FF;
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+}
+
+.navigation {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: larger;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-links:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.navigation a {
+    color: #463c3c;
+    text-decoration: none;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.recipe-card {
+    color: #241a1a;
+    font-family: serif;
+    border-radius: 30px;
+    background-color: rgba(255, 240, 212, 0.856);
+    box-shadow: 10px 25px 25px rgba(0, 10, 0, 0.1);
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0 auto;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    max-width: 100%;
+}
+
+.recipe-card img {
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+}
+
+.recipe-card h1 {
+    font-size: 35px;
+    padding: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.recipe-card p {
+    font-family: cursive;
+    text-align: center;
+    font-weight: lighter;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 15px;
+}
+
+.recipe-intro {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 25px 20px;
+    width: calc(100% - 40px);
+    max-width: 55rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.time-display {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    background-color: #81530e7a;
+    padding: 10px;
+    width: calc(100% - 40px);
+    max-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.pink-divider {
+    border: none;
+    height: 3px;
+    background-color: pink;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.flavor-fuel {
+    background-color: #634c4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    box-shadow: 0 5px 15px #0000001a;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#sub-head {
+    padding-bottom: 20px;
+    color: #241a1a;
+    width: calc(100% - 40px);
+    max-width: 50rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.flavor-fuel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.flavor-fuel li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0 15px;
+}
+
+.title {
+    font-size: 30px;
+    font-style: italic;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    padding: 0 15px;
+}
+.instructions-section{
+    color: #645353;
+    text-align: center;
+    padding: 10px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 10px 0;
+}
+
+.instructions-section li{
+    list-style-type: none;
+}
+
+.instructions-section li:before {
+  content: "•";
+  position: absolute;
+  left: 30px;
+  color: #645353;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.chef-tips{
+    background-color: #634c4c;
+    padding: 30px;
+    border-radius: 7% 7% 0px 15px;
+    font-size: 1.3rem;
+    color: white;
+    line-height: 30px;
+    margin: 20px;
+}
+
+.chef-tips li{
+    list-style-type: none;
+}
+
+.chef-tips li:before {
+  content: "•";
+  position: absolute;
+  left: 30px;
+  color: #fdf9f9;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.nut-fact{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; 
+  margin-top: 30px;
+  margin-left: 20rem;
+  margin-right: 5rem;
+  font-size: 25px;
+
+}
+
+.nut-list1{
+  transition: transform 0.2s ease;
+  width: 50%;
+  box-sizing: border-box; 
+  padding: 5px;
+  border: 1px solid #634c4c;
+  text-align: center;
+  list-style-type: none;
+  border-width: 4px;
+  border-radius: 12px 0 12px 0;
+  color: #645353;
+}
+.nut-list2{
+transition: transform 0.2s ease;
+  width: 50%;
+  box-sizing: border-box; 
+  padding: 5px;
+  border: 1px solid #634c4c;
+  text-align: center;
+  list-style-type: none;
+  border-width: 4px;
+  border-radius: 0 12px 0 12px;
+  color: #645353;
+}
+
+.last-section{
+    background-color: #634c4c;
+    border-radius: 0 90% 0 0;
+    color: #F5E9DE;
+    padding: 10px 10px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navigation {
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.75rem 15px;
+        font-size: medium;
+
+    }
+    
+    .navigation a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+    
+    .recipe-card {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+        font-size: large;
+    }
+    
+    .recipe-card h1 {
+        font-size: 28px;
+        padding: 20px 15px;
+    }
+
+    .instructions-section {
+        font-size: 1.4rem;
+        width: 60rem;
+        padding: 40px;
+    }
+    
+    .recipe-intro {
+        font-size: 1.2rem;
+        padding: 20px 15px;
+        line-height: 1.3;
+        width: calc(100% - 30px);
+    }
+    
+    .flavor-fuel {
+        font-size: 1.1rem;
+        padding: 15px;
+        line-height: 1.8rem;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    #sub-head {
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        width: calc(100% - 30px);
+    }
+    
+    .time-display {
+        width: calc(100% - 30px);
+    }
+    .nut-fact{
+  display: grid; 
+  width: 150%;
+  grid-template-columns:  1fr;
+  gap: 10px; 
+  margin-top: 30px;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  font-size: 25px;
+
+}
+.nut-list1{
+  
+  box-sizing: border-box; 
+  
+  border: 1px solid #634c4c;
+  text-align: center;
+  list-style-type: none;
+  border-width: 4px;
+  border-radius: 12px 0 12px 0;
+  color: #645353;
+}
+.nut-list2{
+
+  box-sizing: border-box; 
+ 
+  border: 1px solid #634c4c;
+  text-align: center;
+  list-style-type: none;
+  border-width: 4px;
+  border-radius: 0 12px 0 12px;
+  color: #645353;
+}
+
+.last-section{
+    background-color: #634c4c;
+    border-radius: 0 80% 0 0;
+    color: #F5E9DE;
+    padding: 15px 15px;
+}
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 10px;
+    }
+    
+    .navigation a {
+        margin: 5px;
+        font-size: 0.85rem;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .recipe-card {
+        margin: 0 10px;
+        width: calc(100% - 20px);
+        font-size: medium;
+        border-radius: 20px;
+    }
+    
+    .recipe-card h1 {
+        font-size: 22px;
+        padding: 15px 10px;
+    }
+    
+    .recipe-card img {
+        width: 80%;
+        max-width: 250px;
+    }
+    
+    .recipe-intro {
+        font-size: 1rem;
+        padding: 15px 10px;
+        width: calc(100% - 20px);
+        line-height: 1.3;
+    }
+    
+    .flavor-fuel {
+        font-size: 1rem;
+        padding: 12px 10px;
+        line-height: 1.6rem;
+    }
+    
+    .title {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    #sub-head {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        width: calc(100% - 20px);
+    }
+    
+    .time-display {
+        width: calc(100% - 20px);
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    
+    .recipe-card p,
+    .flavor-fuel li {
+        padding: 0 10px;
+    }
+
+    
+}
