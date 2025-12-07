@@ -5,21 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creamy Garlic Parmesan Pasta</title>
+    <link href="/Assets/styles/index.css" rel="stylesheet"/>
 </head>
-
 <body>
+    <!--navigation links-->
+    <nav class="navigation">
+    <span class="brand-name"><h2>Zara's flavor lab🍽</h2></span>
+    <span class="nav-links">
+        <a href="home.html">Home</a>
+    <a href="Recipes.html">Recipes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    </span>
+    </nav>
     <div class="recipe-card">
-        <h1>THE BEST RECIPE FOR CREAMY GARLIC PARMESAN PASTA</h1>
-        <!--Add an image-->
-        <img src="./Assets/Pasta.jpg" height="400" width="450" alt="pasta image" />
-        <!--short description of the heading-->
-        <p><strong><em><u>Garlic Parmesan pasta</u></em></strong> is a rich and creamy dish (usually spaghetti or
-            fettuccine)
-            tossed in a velvet garlic sauce butter with a generous amount of Parmesan cheese that melts
-            into the sauce.</p>
+        <h1>THE BEST CREAMY GARLIC PARMESAN PASTA</h1>
+        <img src="./Assets/Pasta.jpg" height="300" width="300" alt="pasta image"/>
+        <p class="subtitle"><em>Creamy magic in every bite!</em></p></div>
+         <!--short description of the heading-->
+        <p class="recipe-intro"> Indulge in this rich and creamy garlic Parmesan pasta, featuring a velvety sauce made with fresh garlic, heavy cream, and high-quality Parmesan cheese. Perfect for a comforting weeknight dinner or special occassion.</p>
+        <!--cooking time display-->
+        <div class="time-display">
+            <p>Prep Time: 10mins</p>
+            <p>Cook Time: 20mins</p>
+            <p>Total Time: 30mins</p></div>
         <section>
             <h2>Here's a simple Garlic Parmesan Pasta recipe</h2>
             <p><strong>Ingredients:</strong></p>
+           <div id="ul">
             <!--unordered list-->
             <ul>
                 <li><mark>300g</mark> spaghetti</li>
@@ -34,14 +47,22 @@
                 <li>Sauteed shrimp</li>
                 <li>Steamed broccoli florets</li>
                 <li>Sun-kissed tomatoes</li>
-            </ul>
+            </ul></div>
         </section>
-        <section>
-            <p><strong>Steps/Instructions:</strong></p>
-            <!--Ordered list-->
+        <!--instruction section-->
+        <section class="instructions-section">
+            <h2 class="section-title"><i class=fas fa-list-ol"></i>Instructions</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step content">
+                        <h4>Cook the pasta</h4>
+                        <p>Cook the pasta according to the package directions in a large pot of salted water until al dente.
+                    reserve <mark>1/2</mark> cup of pasta water before draining.</p>
+                </div>
+            </div>
             <ol>
-                <li>Cook the pasta according to the package directions in a large pot of salted water until al dente.
-                    reserve <mark>1/2</mark> cup of pasta water before draining.</li>
+                
                 <li>While pasta is cooking, melt butter in a large skillet over medium heat. Add minced garlic and
                     saute for<mark>1-2</mark>mins until fragrant but not brown.</li>
                 <li>Pour in the heavy cream, simmer for <mark>3-4</mark>mins, stirring occationally.</li>

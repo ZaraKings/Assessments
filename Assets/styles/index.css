@@ -1,0 +1,88 @@
+/*=====css reset and base styles=====*/
+* {
+    margin: 0;
+    padding: :0;
+    box-sizing: boarder-box;
+}
+:root {
+    /* color palette*/
+    --cream: #FFF8F0;
+    --beige: #F5E9DE;
+    --light-taupe: #E8D7C9;
+    --dark-taupe: #D4B8A4;
+    --gold: #D4A574;
+    --sage: #A3B18A;
+    --chocolate: #583101;
+    --parmesan-gold: #FFD166;
+    --garlic-white: #F8F7FF;
+    /* spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-1g: 2rem;
+    --space-xl: 3rem;
+    }
+
+    .navigation {
+      background-color: var(--cream);
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 64rem;
+      padding: 1rem;
+      font-size: larger;
+       }
+       .nav-link{
+        margin: 5px;
+        display: inline;
+        gap: 70rem;
+       }
+       
+    .recipe-card {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        background-color: black;
+        border-style: solid;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: x-large;
+        text-decoration: none;
+        font-weight: lighter;
+        font-display: var(--cream);
+    }
+    .recipe-card img{
+border-radius: 50%;
+margin: auto;
+display: flex;
+}
+.recipe-card p{
+    font-family: cursive;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: lighter;
+}
+.recipe-intro {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.time-display {
+font-family: 'Times New Roman', Times, serif;
+font-size: medium;
+font-weight: bold;
+text-align: center;
+
+}
+
+    /** class selector **/
+    .title {
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    }
