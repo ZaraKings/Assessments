@@ -77,7 +77,7 @@ body {
 
 .recipe-card img {
     border-radius: 50%;
-    border:2px solid #ffff;
+    border:5px solid #ffff;
     margin: auto;
     display: flex;
     max-width: 100%;
